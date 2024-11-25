@@ -70,4 +70,5 @@ jobs:
           username: __token__
           password: ${{ secrets.PYPI_TOKEN }}
           packages-dir: dist/
-          repository-url: https://test.pypi.org/project/packaging_tutorial_gar7mn/${{ github.event.release.name }}
+          repository-url: https://test.pypi.org/project/packaging_tutorial_gar7mn/
+          # ${{ github.event.release.name }}
