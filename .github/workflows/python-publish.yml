@@ -67,4 +67,7 @@ jobs:
       - name: Publish release distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
+          username: __token__
+          password: ${{ secrets.PYPI_TOKEN }}
           packages-dir: dist/
+          repository-url: https://test.pypi.org/project/packaging_tutorial_gar7mn/${{ github.event.release.name }}
